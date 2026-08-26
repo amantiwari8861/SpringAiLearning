@@ -13,6 +13,14 @@ pipeline {
                 git 'https://github.com/amantiwari8861/SpringAiLearning.git'
             }
         }
+        stage('Verify Environment') {
+            steps {
+                sh '''
+                    echo "JAVA_HOME=$JAVA_HOME"
+                    java --version
+                    mvn --version
+                '''
+            }
 
         stage('Build & Test') {
             steps {
