@@ -17,5 +17,5 @@
 
 # Git -> VCS
 
-/usr/share/maven
-/usr/lib/jvm/java-25-openjdk-amd64
+Maven Home in Ubuntu : /usr/share/maven
+JDK in ubuntu : /usr/lib/jvm/java-25-openjdk-amd64
