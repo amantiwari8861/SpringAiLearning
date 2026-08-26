@@ -13,24 +13,25 @@ pipeline {
                 git 'https://github.com/amantiwari8861/SpringAiLearning.git'
             }
         }
-        stage('Verify Environment') {
+        stage('Where am I?') {
             steps {
                 sh '''
+            echo "===== NODE ====="
+            hostname
+            whoami
+
             echo "===== JAVA ====="
             echo "JAVA_HOME=$JAVA_HOME"
             which java
             readlink -f $(which java)
             java --version
 
-            echo "===== JAVA_HOME ====="
-            ls -ld "$JAVA_HOME"
-            ls -l "$JAVA_HOME/bin/java"
-            "$JAVA_HOME/bin/java" --version
+            echo "===== JDK DIRECTORY ====="
+            ls -ld /usr/lib/jvm || true
+            ls -ld "$JAVA_HOME" || true
 
             echo "===== MAVEN ====="
-            which mvn
-            ls -l $(which mvn)
-            mvn --version
+            which mvn || true
         '''
             }
         }
