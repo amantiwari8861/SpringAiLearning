@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/amantiwari8861/SpringAiLearning'
+                git 'https://github.com/amantiwari8861/SpringAiLearning.git'
             }
         }
     }
