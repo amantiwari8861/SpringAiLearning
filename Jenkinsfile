@@ -16,10 +16,22 @@ pipeline {
         stage('Verify Environment') {
             steps {
                 sh '''
-                    echo "JAVA_HOME=$JAVA_HOME"
-                    java --version
-                    mvn --version
-                '''
+            echo "===== JAVA ====="
+            echo "JAVA_HOME=$JAVA_HOME"
+            which java
+            readlink -f $(which java)
+            java --version
+
+            echo "===== JAVA_HOME ====="
+            ls -ld "$JAVA_HOME"
+            ls -l "$JAVA_HOME/bin/java"
+            "$JAVA_HOME/bin/java" --version
+
+            echo "===== MAVEN ====="
+            which mvn
+            ls -l $(which mvn)
+            mvn --version
+        '''
             }
         }
         stage('Build & Test') {
