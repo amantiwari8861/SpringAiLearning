@@ -15,4 +15,7 @@
                        ▼
                     AI Model
 
-# Git -> VCS 
+# Git -> VCS
+
+/usr/share/maven
+/usr/lib/jvm/java-25-openjdk-amd64
