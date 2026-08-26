@@ -21,7 +21,7 @@ pipeline {
                     mvn --version
                 '''
             }
-
+        }
         stage('Build & Test') {
             steps {
                 sh 'mvn clean install'
