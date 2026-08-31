@@ -35,3 +35,5 @@ build/
 code.zip
 
 *.pem
+
+/images/

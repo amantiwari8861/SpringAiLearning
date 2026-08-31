@@ -1,4 +1,5 @@
 # Notes
+```
                 TEMPLATE FILE
                        │
              ┌─────────┴─────────┐
@@ -14,7 +15,23 @@
                        │
                        ▼
                     AI Model
+```
 
+```
+Spring AI
+│
+├── ChatModel
+│      └── Text / conversational responses
+│
+├── EmbeddingModel
+│      └── Text → vector embeddings
+│
+├── ImageModel
+│      └── Text → image
+│
+└── AudioModel
+└── Audio processing
+```
 # Git -> VCS
 
 Maven Home in Ubuntu : /usr/share/maven
