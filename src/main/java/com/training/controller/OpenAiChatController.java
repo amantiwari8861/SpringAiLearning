@@ -3,7 +3,6 @@ package com.training.controller;
 import com.training.dto.ChatRequest;
 import com.training.service.ChatService;
 import com.training.service.impl.SentimentalAnalysis;
-import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
